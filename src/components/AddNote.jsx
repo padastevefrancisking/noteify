@@ -76,7 +76,10 @@ function AddNote({ showPrompt, setShowPrompt, fetchNotes }) {
                 <h2 className="text-[#05668D] font-bold">Add New Note</h2>
 
                 <div className="flex flex-col gap-y-1">
-                    <h3 className="text-[#427AA1] text-left text-xs font-semibold">Title</h3>
+                    <div className="flex flex-row gap-x-1">
+                        <h3 className="text-[#427AA1] text-left text-xs font-semibold">Title</h3>
+                        <p className="text-red-600">*</p>
+                    </div>
                     <input 
                         name="title"
                         type="text" 
@@ -89,7 +92,10 @@ function AddNote({ showPrompt, setShowPrompt, fetchNotes }) {
                 </div>
 
                 <div className="flex flex-col gap-y-1">
-                    <h3 className="text-[#427AA1] text-left text-xs">Author</h3>
+                    <div className="flex flex-row gap-x-1">
+                        <h3 className="text-[#427AA1] text-left text-xs font-semibold">Author</h3>
+                        <p className="text-red-600">*</p>
+                    </div>
                     <input 
                         name="author"
                         type="text" 
@@ -102,7 +108,7 @@ function AddNote({ showPrompt, setShowPrompt, fetchNotes }) {
                 </div>
 
                 <div className="flex flex-col gap-y-1">
-                    <h3 className="text-[#427AA1] text-left text-xs">Tag</h3>
+                    <h3 className="text-[#427AA1] text-left text-xs font-semibold">Tag</h3>
                     <input 
                         name="tags"
                         type="text" 
@@ -115,7 +121,10 @@ function AddNote({ showPrompt, setShowPrompt, fetchNotes }) {
                 </div>
 
                 <div className="flex flex-col gap-y-1">
-                    <h3 className="text-[#427AA1] text-left text-xs">Description</h3>
+                    <div className="flex flex-row gap-x-1">
+                        <h3 className="text-[#427AA1] text-left text-xs font-semibold">Description</h3>
+                        <p className="text-red-600">*</p>
+                    </div>
                     <textarea 
                         name="message"
                         value={note.message}
