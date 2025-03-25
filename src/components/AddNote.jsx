@@ -134,6 +134,10 @@ function AddNote({ showPrompt, setShowPrompt, fetchNotes }) {
                         className="w-full h-28 text-sm text-gray-600 p-2 border border-gray-300 rounded resize-none"
                     />
                 </div>
+                
+                <div className="text-right text-xs text-gray-500">
+                    {note.message.length}/127 characters
+                </div>
 
                 <div className="flex flex-col gap-2">
                     <div className="flex justify-end gap-2">
